@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.login.ReportController">
+    <children>
+        <TableView fx:id="reportTable" prefHeight="391.0" prefWidth="575.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="10">
+
+            <columns>
+                <TableColumn fx:id="columnChallenge" prefWidth="100" text="Challenge" />
+                <TableColumn fx:id="columnRecommendation" prefWidth="200" text="Recommendation" />
+                <TableColumn fx:id="columnClassId" prefWidth="100" text="Class ID" />
+                <TableColumn fx:id="columnModuleId" prefWidth="100" text="Module ID" />
+                <TableColumn fx:id="columnWeekId" prefWidth="100" text="Week ID" />
+            </columns>
+        </TableView>
+      <Button fx:id="btn_back" layoutX="259.0" layoutY="406.0" mnemonicParsing="false" onAction="#loadPrevious" text="Back" />
+    </children>
+</AnchorPane>

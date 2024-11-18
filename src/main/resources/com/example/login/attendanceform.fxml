@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="276.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AttendanceFormController">
+    <children>
+        <TableView fx:id="attendanceTable" layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="120.0" text="Student ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="180.0" text="Student Name" />
+                <TableColumn fx:id="presentColumn" prefWidth="80.0" text="Present" />
+            </columns>
+        </TableView>
+        <Button fx:id="saveButton" layoutX="220.0" layoutY="236.0" onAction="#saveAttendance" text="Save Attendance" />
+      <Button fx:id="btn_logout" layoutX="122.0" layoutY="236.0" mnemonicParsing="false" onAction="#loadPrevious" prefHeight="25.0" prefWidth="77.0" text="Back" />
+    </children>
+</AnchorPane>
